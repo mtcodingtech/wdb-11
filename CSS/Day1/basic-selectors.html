@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Selectors</title>
+    <style>
+      /* universal selector */
+      * {
+        color: green;
+      }
+
+      /* type selector */
+      h2 {
+        background-color: brown;
+        color: white;
+      }
+
+      /* attribute selector */
+      input[type="email"]{
+        background-color: yellow;
+      }
+      a[target]{
+        background-color: red;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Heading 2</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nesciunt
+      tempora enim nobis facere, amet totam, voluptatem assumenda possimus vitae
+      sapiente asperiores ex non perspiciatis sint molestias quaerat neque?
+      Amet.
+    </p>
+    <h3>Heading 3</h3>
+    <input type="text" />
+    <input type="email" />
+    <input type="password" />
+    <br>
+    <a href="#">Link1</a>
+    <a href="#" target="_blank">Link2</a>
+  </body>
+</html>
