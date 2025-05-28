@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            margin: 50px auto;
+            border-radius: 0.6rem;
+            padding: 2rem;
+            box-sizing: border-box;
+            box-shadow: 4px 10px 15px red, 
+            -4px -10px 10px blue,
+            inset 6px 6px 10px #fff,
+            inset -6px -6px 10px #fff;
+
+            text-shadow: 2px 3px 2px #fff;
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Box</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo class</title>
+    <style>
+      a {
+        color: red;
+      }
+      a:link {
+        color: yellow;
+      }
+      a:hover {
+        color: blueviolet;
+      }
+      a:active {
+        color: green;
+      }
+      a:visited {
+        color: aquamarine;
+      }
+      input:focus{
+        background-color: aqua;
+        color: #fff;
+        outline: none;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <a>No Link</a>
+    <a href="#1">Link</a>
+    <a href="#12">Link</a>
+    <input type="text" />
+  </body>
+</html>

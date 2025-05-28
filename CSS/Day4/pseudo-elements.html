@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        p::first-letter{
+            color: red;
+            font-size: 2rem;
+        }
+        p::first-line{
+            background-color: pink;
+        }
+        p::selection{
+            background-color: violet;
+            color: #fff;
+        }
+        input::placeholder{
+            color: red;
+        }
+        h2::before{
+            content: "Hi ";
+        }
+        h2::after{
+            content: "...";
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est veniam doloribus nihil cumque voluptas nisi eaque reiciendis? Sit veritatis porro ducimus consectetur, quia eos perspiciatis, quisquam autem dolorem nam blanditiis.</p>
+    <input type="text" placeholder="Enter your name">
+
+    <h2>Heading</h2>
+</body>
+</html>
