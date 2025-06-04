@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text</title>
+    <style>
+      h2 {
+        text-align: center;
+        text-decoration: underline line-through;
+      }
+      p {
+        /* text-align: justify; */
+        /* letter-spacing: 3px;
+            word-spacing: 20px; */
+        text-transform: capitalize;
+        text-indent: 50px;
+      }
+      a {
+        text-decoration: none;
+      }
+      h1 {
+        text-align: center;
+        position: relative;
+        display: inline;
+      }
+      h1::before,
+      h1::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: rgb(31, 8, 8);
+        position: absolute;
+      }
+      h1::before {
+        top: 15px;
+      }
+      h1::after {
+        bottom: 10px;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Heading 2</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+      impedit sed, accusamus corrupti incidunt itaque praesentium magnam non
+      fugit nobis a doloremque laborum earum iusto porro harum ab vitae modi?
+    </p>
+    <a href="#">Link1</a>
+    <br />
+    <h1>Heading 1</h1>
+  </body>
+</html>
