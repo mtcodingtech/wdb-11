@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 180px;
+        gap: 1rem;
+      }
+      .container .item{
+        border-radius: 10px;
+      }
+      .container .item:nth-child(1) {
+        background-color: aqua;
+        /* grid-column-start: 1;
+        grid-column-end: 3; */
+        grid-column: 1 / 3;
+      }
+      .container .item:nth-child(2) {
+        background-color: rgb(246, 69, 216);
+      }
+      .container .item:nth-child(3) {
+        background-color: rgb(115, 117, 249);
+        grid-row: 1 / 3;
+        grid-column: 4 / 5;
+      }
+      .container .item:nth-child(4) {
+        background-color: rgb(215, 240, 58);
+      }
+      .container .item:nth-child(5) {
+        background-color: rgb(232, 157, 96);
+        grid-column: 2 / 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+  </body>
+</html>

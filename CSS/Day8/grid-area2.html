@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid area 2</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        display: grid;
+        grid-auto-rows: 100px;
+        gap: 1rem;
+        grid-template-areas:
+          "one one two two two"
+          "one one four four six"
+          "three three four four five";
+      }
+      .container > * {
+        border-radius: 10px;
+      }
+      .item-1 {
+        background-color: blueviolet;
+        grid-area: one;
+      }
+      .item-2 {
+        background-color: rgb(84, 244, 105);
+        grid-area: two;
+      }
+      .item-3 {
+        background-color: rgb(223, 226, 43);
+        grid-area: three;
+      }
+      .item-4 {
+        background-color: rgb(226, 43, 177);
+        grid-area: four;
+      }
+      .item-5 {
+        background-color: rgb(240, 200, 92);
+        grid-area: five;
+      }
+      .item-6 {
+        background-color: rgb(92, 230, 240);
+        grid-area: six;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- .item-$*6{$} -->
+      <div class="item-1">1</div>
+      <div class="item-2">2</div>
+      <div class="item-3">3</div>
+      <div class="item-4">4</div>
+      <div class="item-5">5</div>
+      <div class="item-6">6</div>
+    </div>
+  </body>
+</html>
