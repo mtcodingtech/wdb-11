@@ -1,0 +1,29 @@
+@import "./variables";
+@import "./buttonStyles";
+@import "./flexCenter";
+
+.main-container {
+  h1 {
+    background-color: $main-color;
+    color: $white;
+    @extend .btnStyles;
+  }
+  p {
+    color: $main-color;
+  }
+  button {
+    @extend .btnStyles;
+  }
+}
+button {
+  @extend .btnStyles;
+}
+.container-1{
+    @include flexCenter(blue, 40vh);
+}
+.container-2{
+    @include flexCenter(pink, 100vh);
+}
+.container-3{
+    @include flexCenter(aqua, 20vh);
+}

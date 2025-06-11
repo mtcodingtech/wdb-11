@@ -1,0 +1,43 @@
+.btnStyles, button, .main-container button, .main-container h1 {
+  padding: 10px 20px;
+  margin: 20px;
+  background-color: rgb(49, 240, 141);
+  color: #fff;
+}
+
+.main-container h1 {
+  background-color: rgb(49, 240, 141);
+  color: #fff;
+}
+.main-container p {
+  color: rgb(49, 240, 141);
+}
+.container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  background-color: blue;
+  height: 40vh;
+}
+
+.container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  background-color: pink;
+  height: 100vh;
+}
+
+.container-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  background-color: aqua;
+  height: 20vh;
+}/*# sourceMappingURL=style.css.map */
